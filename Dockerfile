@@ -1,4 +1,4 @@
-ARG SYNAPSE_VERSION="1.68.0"
+ARG SYNAPSE_VERSION="v1.69.0"
 FROM matrixdotorg/synapse:v${SYNAPSE_VERSION}
 
 ADD --chmod=755 https://raw.githubusercontent.com/ma1uta/matrix-synapse-rest-password-provider/ed377fb70513c2e51b42055eb364195af1ccaf33/rest_auth_provider.py /usr/local/lib/python3.9/site-packages/rest_auth_provider.py
