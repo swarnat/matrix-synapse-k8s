@@ -6,6 +6,8 @@ ADD --chmod=755 https://raw.githubusercontent.com/matrix-org/synapse-s3-storage-
 
 RUN pip install --no-deps --no-warn-script-location boto3 botocore humanize jmespath s3transfer tqdm typing-extensions && \
     mkdir -p /matrix-media-store-parent/media/local_content && \
+    chmod 777 /matrix-media-store-parent && \
+    chmod 777 /matrix-media-store-parent/media && \
     chmod 777 /matrix-media-store-parent/media/local_content
 
 EXPOSE 8008/tcp 8448/tcp
