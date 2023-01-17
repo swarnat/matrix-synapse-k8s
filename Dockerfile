@@ -1,4 +1,4 @@
-FROM matrixdotorg/synapse:v1.74.0
+FROM matrixdotorg/synapse:v1.75.0
 
 ADD --chmod=755 https://raw.githubusercontent.com/ma1uta/matrix-synapse-rest-password-provider/ed377fb70513c2e51b42055eb364195af1ccaf33/rest_auth_provider.py /usr/local/lib/python3.9/site-packages/rest_auth_provider.py
 ADD --chmod=755 https://raw.githubusercontent.com/devture/matrix-synapse-shared-secret-auth/2.0.2/shared_secret_authenticator.py /usr/local/lib/python3.9/site-packages/shared_secret_authenticator.py
